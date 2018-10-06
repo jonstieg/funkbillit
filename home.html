@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <!-- I've never used a Google Font before and Roboto is close enough to GT Super that I used it instead. I'm impressed with how quickly it loads -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="center columnar">
+        <div class="website-title">
+            BULLITT
+        </div>
+
+        <div class="website-sub-title">
+            Talent
+        </div>
+
+        <div class="thumbnail-section-wrap center">
+            <!-- I stuck with vanilla HTML/CSS/Javascript so there is more repetition of code than I would like. This whole stack of thumbnails would ideally be a loop. -->
+            <!-- I like that the thumbnail images are grabbed on the fly from Vimeo. Theoretically they could get updated if the video changes. Also, they are very lightweight. -->
+            <div class="thumbnail-wrap thumbnail">
+                <img class="thumbnail-wrap" src="https://i.vimeocdn.com/video/728203260_640.webp" id="thumbnail-80s" alt="80's" onclick="openVideoOverlay('https://vimeo.com/channels/staffpicks/291933000', '80\'s')">
+                <div class="thumbnail-text-centered">80's</div>
+            </div>
+
+            <div class="thumbnail-wrap thumbnail">
+                <img class="thumbnail-wrap" src="https://i.vimeocdn.com/video/729239553_640.webp" id="thumbnail-cartoon" alt="cartoon" onclick="openVideoOverlay('https://vimeo.com/channels/staffpicks/292766005', 'Cartoon')">
+                <div class="thumbnail-text-centered">Cartoon</div>
+            </div>
+
+            <div class="thumbnail-wrap thumbnail">
+                <img class="thumbnail-wrap" src="https://i.vimeocdn.com/video/724998753_640.webp" id="thumbnail-topic" alt="topic" onclick="openVideoOverlay('https://vimeo.com/289133524', 'Topic')">
+                <div class="thumbnail-text-centered">Topic</div>
+            </div>
+
+            <div class="thumbnail-wrap thumbnail">
+                <img class="thumbnail-wrap" src="https://i.vimeocdn.com/video/729676916_640.webp" id="thumbnail-warehouse" alt="warehouse" onclick="openVideoOverlay('https://vimeo.com/282685581', 'Warehouse')">
+                <div class="thumbnail-text-centered">Warehouse</div>
+            </div>
+
+            <div class="thumbnail-wrap thumbnail">
+                <img class="thumbnail-wrap" src="https://i.vimeocdn.com/video/728721357_640.webp" id="thumbnail-lipstick" alt="lipstick" onclick="openVideoOverlay('https://vimeo.com/217601406', 'Lipstick')">
+                <div class="thumbnail-text-centered">Lipstick</div>
+            </div>
+
+            <div class="thumbnail-wrap thumbnail">
+                <img class="thumbnail-wrap" src="https://i.vimeocdn.com/video/728593724_640.webp" id ="thumbnail-biking" alt="biking" onclick="openVideoOverlay('https://vimeo.com/292251793', 'Biking')">
+                <div class="thumbnail-text-centered">Biking</div>
+            </div>
+
+            <div class="thumbnail-wrap thumbnail">
+                <img class="thumbnail-wrap" src="https://i.vimeocdn.com/video/709241791_640.webp" id ="thumbnail-surfing" alt="surfing" onclick="openVideoOverlay('https://vimeo.com/246001846', 'Surfing')">
+                <div class="thumbnail-text-centered">Surfing</div>
+            </div>
+
+            <div class="thumbnail-wrap thumbnail">
+                <img class="thumbnail-wrap" src="https://i.vimeocdn.com/video/719590557_640.webp" id ="thumbnail-space" alt="space" onclick="openVideoOverlay('https://vimeo.com/285010561', 'Space')">
+                <div class="thumbnail-text-centered">Space</div>
+            </div>
+
+            <div class="thumbnail-wrap thumbnail">
+                <img class="thumbnail-wrap" src="https://i.vimeocdn.com/video/716789626_640.webp" id ="thumbnail-tech" alt="tech" onclick="openVideoOverlay('https://vimeo.com/281951902', 'Tech')">
+                <div class="thumbnail-text-centered">Tech</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- I didn't implement any wrapping for the video overlay CLOSE button. Instead I added the ability to close the video by tapping anywhere -->
+    <div id="video-overlay" class="video-overlay" onclick="closerVideoOverlay()">
+        
+        <div class="center columnar">
+            <div class="website-title">
+                BULLITT
+            </div>
+        </div>
+
+        <div class="video-player center">
+            <div id="video-title" class="vertical-text video-title">
+                title to be replaced
+            </div>
+
+            <div id="video-embed" class="center video-embed"></div>
+
+            <div class="vertical-text video-close-button" onclick="closerVideoOverlay()">
+                CLOSE
+            </div>
+        </div>
+    </div>
+</body>
