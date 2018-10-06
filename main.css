@@ -32,7 +32,7 @@ body {
 }
 
 .thumbnail-section-wrap {
-  max-width: 1650px;
+  max-width: 1800px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -60,9 +60,9 @@ body {
 .thumbnail-wrap {
   flex: none;
   /* width: 300px; */
-  width: 550px;
+  width: 600px;
   /* height: 150px; */
-  height: 275px;
+  height: 300px;
   object-fit: cover;
   cursor: pointer;
 }
@@ -85,7 +85,7 @@ body {
   display: flex;
   flex-direction: row;
   padding-top: 40px;
-  height: 500px;
+  height: 400px;
 }
 
 .video-title {
