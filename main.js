@@ -2,7 +2,6 @@
 var url = '';
 
 var videoWidth = (/iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) ? '375' : '650';
-console.log(videoWidth);
 
 // This function puts the video on the page
 function embedVideo(video) {

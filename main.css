@@ -32,7 +32,7 @@ body {
 }
 
 .thumbnail-section-wrap {
-  max-width: 960px;
+  max-width: 1125px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
