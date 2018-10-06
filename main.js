@@ -1,6 +1,8 @@
 // url will change based on which video is clicked so make it a variable
 var url = '';
 
+var videoWidth = (/iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) ? '375' : '650';
+
 // This function puts the video on the page
 function embedVideo(video) {
   document.getElementById('video-embed').innerHTML = unescape(video.html);
@@ -20,7 +22,7 @@ function loadVideo() {
 }
 
 function openVideoOverlay(videoLink, title) {
-  url = 'https://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoLink) + '&callback=embedVideo&title=false&byline=false&portrait=false&width=650';
+  url = 'https://www.vimeo.com/api/oembed.json?url=' + encodeURIComponent(videoLink) + '&callback=embedVideo&title=false&byline=false&portrait=false&width=' + videoWidth;;
   loadVideo();
   document.getElementById("video-overlay").style.display = "block";
   document.getElementById("video-title").innerHTML = title;

@@ -32,7 +32,7 @@ body {
 }
 
 .thumbnail-section-wrap {
-  max-width: 1350px;
+  max-width: 960px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -59,8 +59,8 @@ body {
 
 .thumbnail-wrap {
   flex: none;
-  width: 450px;
-  height: 225px;
+  width: 375px;
+  height: 187.5px;
   object-fit: cover;
   cursor: pointer;
 }
@@ -82,7 +82,7 @@ body {
 .video-player {
   display: flex;
   flex-direction: row;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   height: 400px;
 }
 
