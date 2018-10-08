@@ -73,7 +73,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: rgba(0,0,0,0.9);
   border-style: solid;
   border-left-width: 0px;
   border-top-width: 8px;
